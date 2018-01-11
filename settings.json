@@ -5,12 +5,12 @@
 */
 {
   // name your instance!
-  "title": "MGDCOIN",
+  "title": "MassGrid",
 
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "mlgbcoin",
+  "coin": "MGD",
 
   // coin symbol
   "symbol": "MGD",
@@ -26,7 +26,7 @@
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Darkly",
+  "theme": "Cyborg",
 
   // port to listen for requests on.
   "port" : 3001,
@@ -60,7 +60,7 @@
 
   // menu settings
   "display": {
-    "api": true,
+    "api": false,
     "markets": false,
     "richlist": true,
     "twitter": false,
@@ -92,10 +92,10 @@
   "markets": {
     "coin": "JBS",
     "exchange": "MGD",
-    "enabled": ["poloniex"],
+    "enabled": ["bittrex"],
     "cryptopia_id": "1658",
     "ccex_key" : "Get-Your-Own-Key",
-    "default": "poloniex"
+    "default": "bittrex"
   },
 
   // richlist/top100 settings
@@ -124,7 +124,7 @@
   "genesis_block": "000003095c9b69c2a9b9ab1d60ab72d72d0a603b4c5cdb1c656c9cdca291be02",
 
   //heavy (enable/disable additional heavy features)
-  "heavy": true,
+  "heavy": false,
 
   //amount of txs to index per address (stores latest n txs)
   "txcount": 100,
@@ -147,7 +147,7 @@
 
   // nethash unitd: sets nethash API return units
   // valid options: "P" (PH/s), "T" (TH/s), "G" (GH/s), "M" (MH/s), "K" (KH/s)
-  "nethash_units": "G ",
+  "nethash_units": "G",
 
   // Address labels
   // example : "JhbrvAmM7kNpwA6wD5KoAsbtikLWWMNPcM": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}
