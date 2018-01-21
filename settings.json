@@ -19,7 +19,7 @@
   "logo": "/images/logo.png",
 
   // favicon
-  "favicon": "public/favicon.ico",
+  "favicon": "",
 
   // Uses bootswatch themes (http://bootswatch.com/)
   // Valid options:
