@@ -1,11 +1,14 @@
 body {
-  padding: 80px 40px;
+  padding: 80px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
- /* background-image: url('/images/background2.png');*/
+  background-image: url('/images/background3.png');
+	background-repeat:no-repeat;
+	background-position:center 50px;
 }
 
 #index-search {
-	width: 80%;
+	width: 100%;
+	padding: 0 15px;
 }
 
 .nav-search input {
@@ -50,20 +53,31 @@ body {
 table {
 	width: 100% !important;
 }
+.dataTables_wrapper {
+	background-color: #FFFFFF;
+}
+
 .dataTables_info, .dataTables_length {
 	padding-left: 10px;
 }
 
 .dataTables_info {
-	display: hidden !important;
+	display: none;
 }
 
 .dataTables_length {
 	padding-top: 10px;
 }
 
-.dataTables_paginate {
-	padding-right: 5px;
+.dataTables_length label {
+	font-weight: normal;
+	float: right !important;
+	text-align: right;
+}
+
+.col-xs-6 .dataTables_paginate {
+	text-align: center !important;
+	float: none;
 }
 
 .tab-pane {
@@ -163,4 +177,5 @@ tr {
 	position: absolute;
 	bottom: 0px;
 }
+
 

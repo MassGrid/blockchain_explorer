@@ -2,7 +2,7 @@ extends layout
 
 block content
   - var time = format_unixtime(block.time)
-  .col-xs-12.col-md-10.col-md-offset-1
+  .col-xs-12
     .well.well-sm.hidden-lg.hidden-md(style='word-wrap:break-word;')
       | #{block.hash}
     .panel.panel-default
@@ -92,9 +92,9 @@ block content
                 td #{txn.vout.length}
                 if txn.vout.length > 0
                   - var total = txn.total / 100000000
-                  td #{total.toFixed(8)}
+                  td #{total.toFixed(3)}
                 else
-                  td #{txn.total.toFixed(8)}
+                  td #{txn.total.toFixed(3)}
                 td.view_tx 
                   a(href='/tx/#{txn.txid}')
                     span.glyphicon.glyphicon-eye-open 

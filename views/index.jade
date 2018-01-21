@@ -44,7 +44,7 @@ block content
               json.data[i]['txid'] = "<a href='/tx/" + json.data[i]['txid'] + "'>" + json.data[i]['txid'] + "</a>";
               json.data[i]['blockindex'] = "<a href='/block/" + json.data[i]['blockhash'] + "'>" + json.data[i]['blockindex'] + "</a>";
               var amount = json.data[i]['total'] / 100000000;
-              json.data[i]['total'] = amount.toFixed(8);
+              json.data[i]['total'] = amount.toFixed(3);
               json.data[i]['recipients'] = json.data[i]['vout'].length;
             }
             return json.data;
@@ -52,10 +52,10 @@ block content
         },
         columns: [
           { data: 'blockindex', width: '8%' },
-          { data: 'txid', width: '40%' },
-          { data: 'recipients', width:'5%' },
-          { data: 'total', width: '15%' },
-          { data: 'timestamp', width: '25%' },
+          { data: 'txid', width: '30%' },
+          { data: 'recipients', width:'15%' },
+          { data: 'total', width: '20%' },
+          { data: 'timestamp', width: '20%' },
         ]
       });
       setInterval( function () {

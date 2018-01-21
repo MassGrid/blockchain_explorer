@@ -33,8 +33,8 @@
 
   // database settings (MongoDB)
   "dbsettings": {
-    "user": "wany",
-    "password": "mlgbcoin2017",
+    "user": "mgd",
+    "password": "mgdcoin2017!",
     "database": "explorerdb",
     "address": "localhost",
     "port": 27017
@@ -47,9 +47,9 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 9442,
-    "user": "mgdcoinrpc",
-    "pass": "mgdcoinpassword"
+    "port": 17005,
+    "user": "mgdrpc",
+    "pass": "mgdcoin2017!"
   },
 
   // confirmations

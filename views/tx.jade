@@ -2,7 +2,7 @@ extends layout
 
 block content
   - var time = format_unixtime(tx.timestamp)
-  .col-xs-12.col-md-10.col-md-offset-1
+  .col-xs-12.col-md-12
     .well.well-sm.hidden-lg.hidden-md(style='word-wrap:break-word;')
       | #{tx.txid}
     .panel.panel-default
@@ -76,9 +76,9 @@ block content
                         td 
                           a.loading(href='/address/#{r.addresses}') 
                             =r.addresses
-                        td.danger.hidden-xs #{ramount.toFixed(8)}
+                        td.danger.hidden-xs #{ramount.toFixed(3)}
                       tr.hidden-lg.hidden-md
-                          td.danger #{ramount.toFixed(8)} #{settings.symbol}
+                          td.danger #{ramount.toFixed(3)} #{settings.symbol}
                 else
                   tr.info(style='text-align:center')
                     td #{settings.locale.proof_of_stake}
@@ -99,15 +99,15 @@ block content
                       td 
                         a.loading(href='/address/#{r.addresses}') 
                           =r.addresses 
-                      td.success.hidden-xs  #{ramount.toFixed(8)}
+                      td.success.hidden-xs  #{ramount.toFixed(3)}
                     tr.hidden-lg.hidden-md
-                      td.success #{ramount.toFixed(8)} #{settings.symbol}
+                      td.success #{ramount.toFixed(3)} #{settings.symbol}
                   else
                     tr
                       td 
                         a.loading(href='/address/#{r.addresses}') 
                           =r.addresses 
-                      td.success.hidden-xs  #{ramount.toFixed(8)}
+                      td.success.hidden-xs  #{ramount.toFixed(3)}
                     tr.hidden-lg.hidden-md
-                      td.success #{ramount.toFixed(8)} #{settings.symbol} 
+                      td.success #{ramount.toFixed(3)} #{settings.symbol} 
     .footer-padding
