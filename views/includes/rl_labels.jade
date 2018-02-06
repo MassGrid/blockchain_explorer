@@ -6,7 +6,7 @@ if settings.labels[item.a_id]
         a(href='#{settings.labels[item.a_id].url}', target='_blank')
           span.fa.fa-question-circle(style='margin-left:5px;')
   else
-    label.label.label-default.hidden-xs(style='margin-left:15px;') 
+    label.label.label-default.hidden-xs(style='margin-left:15px; color: #f00;') 
       =settings.labels[item.a_id].label
       if settings.labels[item.a_id].url
         a(href='#{settings.labels[item.a_id].url}', target='_blank')

@@ -166,6 +166,7 @@ router.get('/richlist', function(req, res) {
               balance: richlist.balance,
               received: richlist.received,
               stats: stats,
+              dist_locked: distribution.locked,
               dista: distribution.t_1_25,
               distb: distribution.t_26_50,
               distc: distribution.t_51_75,
@@ -316,4 +317,23 @@ router.get('/ext/summary', function(req, res) {
     });
   });
 });
+
+router.get('/ext/distribution', function(req, res) {
+  db.get_stats(settings.coin, function (stats) {
+    db.get_richlist(settings.coin, function(richlist){
+      //console.log(richlist);
+      if (richlist) {
+        db.get_distribution(richlist, stats, function(distribution) {
+          res.send({
+            stats: stats,
+            dist_locked: distribution.locked
+          });
+        });
+      } else {
+        route_get_index(res, null);
+      }
+    });
+  });
+});
+
 module.exports = router;
