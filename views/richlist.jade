@@ -4,11 +4,11 @@ block content
   script.
     $(document).ready(function(){
       var data = [
-      ['Top 1-25', !{dista.percent}],['Top 26-50', !{distb.percent}],['Top 51-75', !{distc.percent}],['Top 76-100', !{distd.percent}],['101+', !{diste.percent}]
+      ['Locked Permanently', !{dist_locked.percent}], ['Top 1-25', !{dista.percent}],['Top 26-50', !{distb.percent}],['Top 51-75', !{distc.percent}],['Top 76-100', !{distd.percent}],['101+', !{diste.percent}]
       ];
       var pieWealthDist = $.jqplot('pieChart', [data],
         {
-          seriesColors: [ "#efa904", "#aa5e2a", "#3aa401", "#9500cc", "#CCC"],
+          seriesColors: [ "#F00", "#efa904", "#aa5e2a", "#3aa401", "#9500cc", "#CCC"],
           series: [{
             // Make this a pie chart.
             renderer: $.jqplot.PieRenderer,
@@ -60,6 +60,12 @@ block content
               th Amount (#{settings.symbol})
               th.text-center %
           tbody
+            tr
+              th
+                div.pull-left(style='background-color:#F00;width:20px;height:20px;margin-right:6px;')
+                span Locked Permanently
+              td #{parseFloat(dist_locked.total).toFixed(3)}
+              td.text-center #{parseFloat(dist_locked.percent).toFixed(2)}
             tr
               th
                 div.pull-left(style='background-color:#efa904;width:20px;height:20px;margin-right:6px;')

@@ -5,7 +5,7 @@ html
     link(rel='stylesheet', href='/themes/#{settings.theme}/bootstrap.min.css')
     link(rel='stylesheet', href='/vendor/jqplot/jquery.jqplot.css')
     link(rel='stylesheet', href='/vendor/dataTables.bootstrap.css')
-    link(rel='stylesheet', href='/vendor/font-awesome.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/vendor/jquery-1.11.0.min.js')
     script(src='/vendor/bootstrap.min.js')
@@ -120,7 +120,7 @@ html
             if settings.display.richlist == true
               li#richlist
                 a.navbar-link(href='/richlist')
-                  span.fa.fa-btc
+                  span.fa.fa-list-ol
                   span.menu-text #{settings.locale.menu_richlist}
             if settings.display.markets == true
               li#markets
