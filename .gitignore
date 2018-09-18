@@ -28,5 +28,6 @@ settings.json
 .idea
 *~
 *.ico
+!public/favicon.ico
 *.png
 
