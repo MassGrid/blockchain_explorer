@@ -30,14 +30,18 @@ html
             $("#difficulty").text(json.data[0].difficulty.toFixed(3));
             $("#difficultyHybrid").text(json.data[0].difficultyHybrid);
             $("#hashrate").text(Number(json.data[0].hashrate).toFixed(3));
-            $("#lastPrice").text(json.data[0].lastPrice.toFixed(3));
+            // $("#lastPrice").text(json.data[0].lastPrice.toFixed(3));
             $("#lblConnections").text(json.data[0].connections + ' connections');
             $("#lblBlockcount").text(json.data[0].blockcount + ' blocks');
             $("#lblX1").text(' ');
           }});
-
+          $.ajax({url: "https://api.coinmarketcap.com/v2/ticker/3072/?convert=CNY",success: function(json) {
+              var price = json.data.quotes.CNY.price;
+              var percent_change = json.data.quotes.CNY.percent_change_24h;
+              $("#lastPrice").text(price.toFixed(3)+' CNY ('+percent_change+'%)');
+          }});
           $.ajax({url: '/ext/distribution', success: function(json){
-            console.log('JS:', JSON.stringify(json));
+            //- console.log('JS:', JSON.stringify(json));
             // circulating supply = supply - locked
             var coinSupply = json.stats.supply - json.dist_locked.total;
             $("#supply").text(coinSupply.toFixed(3));
