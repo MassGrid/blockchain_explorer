@@ -1,9 +1,23 @@
 body {
-  padding: 80px;
+  padding:160px 80px 80px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url('/images/background3.png');
 	background-repeat:no-repeat;
 	background-position:center 50px;
+}
+
+/** top notice **/
+.notice{
+	height: 80px;background: #e60012;font-family: Arial, Helvetica, sans-serif;color: #fff;
+}
+.notice .main{
+	width: 960px;margin: 0 auto;font-size: 24px;line-height: 33px;text-align: center;
+}
+.notice .main img{
+	position: relative; top: 0px; left: -8px;
+}
+.notice .main a{
+	text-decoration: underline;color: #fff;
 }
 
 #index-search {
@@ -168,7 +182,6 @@ tr {
 }
 .qrcode {
 	position: absolute;
-	top: 65px;
 	right: 15px;
 }
 

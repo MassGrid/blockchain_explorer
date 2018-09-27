@@ -92,6 +92,14 @@ html
       - return time
     -  };
     .nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+      .notice
+        .main
+          img(src='/images/notice.jpg')
+          span #{settings.locale.notice1}
+          a(href='https://www.massgrid.com/downloads.html?language=en') #{settings.locale.notice2}
+          span #{settings.locale.notice3}
+          a(href='https://www.massgrid.com/downloads.html?language=en') #{settings.locale.notice4}
+          span #{settings.locale.notice5}
       .container-fluid
         .navbar-header
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse')
