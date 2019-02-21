@@ -6,6 +6,8 @@ div.dataTables_length label {
 
 div.dataTables_length select {
 	width: 75px;
+    background-color: #22344b;
+    color: white;
 }
 
 div.dataTables_filter label {
