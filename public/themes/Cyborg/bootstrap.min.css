@@ -1337,7 +1337,7 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #FFFFFF;
-    background-color: #FFFFFF;
+    background-color: #1e272a;
 }
 .col-xs-6 {
     color: white;
@@ -2690,7 +2690,7 @@ pre code {
 }
 
 table {
-    background-color: #f4f4f4
+    background-color: #293235;
 }
 
 caption {
@@ -2740,7 +2740,7 @@ th {
 }
 
 .table-bordered {
-    /* border: 1px solid #b3b3b3; */
+    border: 1px solid #293235;
 }
 
 .table-bordered>thead>tr>th,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>tbody>tr>td,.table-bordered>tfoot>tr>td {
@@ -2760,12 +2760,12 @@ th {
 }
 
 .table-bordered>tbody>tr:nth-of-type(odd) {
-    background-color: #22344b;
+    background-color: #343c3f;
     color: white;
 }
 
 .table-bordered>tbody>tr:nth-of-type(even) {
-    background-color: #324258;
+    background-color: #293235;
     color: white;
 }
 
@@ -2936,9 +2936,9 @@ output {
     font-size: 14px;
     line-height: 1.42857143;
     color: #888888;
-    background-color: #ffffff;
+    background-color: #293235;
     background-image: none;
-    border: 1px solid #22344A;
+    border: 1px solid #293235;
     /*border-radius: 4px;*/
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
@@ -4747,8 +4747,8 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 }
 
 .navbar-default {
-    background-color: #102138;
-    border-color: #102138;
+    background-color: #192023;
+    border-color: #192023;
 }
 
 .navbar-default .navbar-brand {
@@ -5763,7 +5763,7 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
 
 .col-md-2 .panel {
     margin-bottom: 20px;
-    background-color: #22344b;
+    background-color: #293235;
     border-width: 0;
     /*border-radius: 4px;*/
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
@@ -5972,14 +5972,14 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-gro
     position: relative;
 }
 .table-bordered .hidden-xs {
-    color: #666666;
+    color: white;
     position: relative;
 }
 
 .row .panel-default>.panel-heading {
     color: #FFFFFF;
-    background-color: #435266;
-    border-color: #435266;
+    background-color: #192023;
+    border-color: #192023;
     white-space:nowrap;
     top:0;
 }
@@ -7143,7 +7143,7 @@ button.close {
 }
 
 table,.table {
-    color: #666666;
+    color: white;
 }
 table.dataTable {
     clear: both;
@@ -7151,7 +7151,7 @@ table.dataTable {
 }
 
 table a:not(.btn),.table a:not(.btn) {
-    color: #666666;
+    color: white;
     text-decoration: underline
 }
 
